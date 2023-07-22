@@ -1,0 +1,162 @@
+.user-wrapper {
+  width: 100vw;
+  min-height: 90vh;
+  background-color: rgb(224, 209, 209);
+}
+.create-btn {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  padding: 1rem 0;
+  margin: auto;
+}
+.create-btn button {
+  background-color: #1a73e8;
+  padding: 1rem 4rem;
+  border-radius: 25px;
+  border: none;
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.create-btn button:nth-child(1) {
+  transition: all 0.2s linear;
+  background-color: transparent;
+  border: 1px solid #1a73e8;
+  color: black;
+}
+.create-btn button:nth-child(1):hover {
+  background-color: #1a73e8;
+  color: white;
+}
+
+.create-btn button:nth-child(2):hover {
+  background-color: transparent;
+  border: 1px solid #1a73e8;
+  color: black;
+}
+.user-content {
+  margin-top: 2rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+}
+th {
+  background-color: rgba(192, 188, 188, 0.656);
+  font-size: 1.3rem;
+  font-family: sans-serif;
+}
+tr:nth-child(even) {
+  background-color: #4e73bd;
+  transition: all 0.2s linear;
+}
+tr:nth-child(odd) {
+  background-color: #9fafc4;
+  transition: all 0.2s linear;
+}
+tr:nth-child(even):hover {
+  background-color: #2b4e96;
+  color: white;
+}
+tr:nth-child(odd):hover {
+  background-color: #8fa0b6;
+
+  color: black;
+}
+th,
+td {
+  padding: 1.4rem 0.5rem;
+  text-align: center;
+  font-family: sans-serif;
+}
+td {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.action-btn {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.7rem;
+}
+.action-btn button {
+  padding: 0.5rem 3rem;
+  border: 1px solid rgba(1, 31, 66, 0.433);
+  background-color: transparent;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  font-size: 1.4rem;
+}
+.action-btn button:hover {
+  background-color: rgb(103, 127, 154);
+  color: rgb(205, 205, 199);
+}
+.modal {
+  position: fixed;
+  top: 20%;
+  left: 25%;
+  transform: translate(50% -50%);
+  width: 50vw;
+  border-radius: 10px;
+  min-height: 500px;
+  background-color: white;
+}
+.modal form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 0;
+}
+.modal form input {
+  padding: 0.8rem 1rem;
+  width: 60%;
+  outline: none;
+  border: 1px solid #2b4e96;
+  border-radius: 5px;
+}
+
+.modal form button {
+  width: 20%;
+  border: none;
+  padding: 1rem;
+  background-color: #1a73e8;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.pagination {
+  width: 50vw;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.pagination li {
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgb(203, 199, 199);
+}
+.pagination .active {
+  background-color: #1a73e8be;
+}

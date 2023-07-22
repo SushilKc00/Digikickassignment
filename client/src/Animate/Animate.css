@@ -1,0 +1,38 @@
+.animate-container-box h2 {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.animate-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background-color: blueviolet;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 9999999;
+  border-radius: 10px;
+}
+.animate-container2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background-color: rgb(36, 34, 34);
+  z-index: 9999999;
+  border-radius: 10px;
+}
+
+.animate-container3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background-color: rgb(232, 238, 232);
+  z-index: 9999999;
+  border-radius: 5px;
+}
