@@ -42,7 +42,7 @@ const authLogin = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const userExist = yield authschema_1.authSchema.findOne({ email });
     if (userExist) {
         if (userExist.password === password) {
-            const token = yield (0, jwtToken_1.jsonToken)(userExist._id);
+            const token = (0, jwtToken_1.jsonToken)(userExist._id);
             res.json({
                 success: true,
                 message: "login successfull",

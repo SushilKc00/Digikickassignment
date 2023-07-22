@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.authSchema = void 0;
+exports.userModal = void 0;
 const mongoose_1 = require("mongoose");
 const schemaUser = new mongoose_1.Schema({
     name: { type: String, required: true, trim: true },
@@ -8,5 +8,6 @@ const schemaUser = new mongoose_1.Schema({
     mobile: { type: String, required: true, trim: true, min: 3 },
     address: { type: String, required: true, trim: true },
     gender: { type: String, required: true, trim: true },
+    profile: { type: String, default: "profile.png" },
 });
-exports.authSchema = (0, mongoose_1.model)("h3data", schemaUser);
+exports.userModal = (0, mongoose_1.model)("user", schemaUser);

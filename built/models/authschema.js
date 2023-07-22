@@ -8,4 +8,4 @@ const schemaAuth = new mongoose_1.Schema({
     password: { type: String, required: true, trim: true, min: 3 },
     confirmpassword: { type: String, required: true, trim: true, min: 3 },
 });
-exports.authSchema = (0, mongoose_1.model)("h3data", schemaAuth);
+exports.authSchema = (0, mongoose_1.model)("auth", schemaAuth);
