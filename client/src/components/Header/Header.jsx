@@ -42,7 +42,7 @@ export const Header = () => {
             </div>
             <figure>
               <NavLink to="/">
-                <img src={Logo} alt="logo" className="image-logo" />
+                <h2>HELIVERSE</h2>
               </NavLink>
             </figure>
           </div>

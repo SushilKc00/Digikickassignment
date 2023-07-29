@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Layout } from "../../components/Layout/Layout";
 import { Animate } from "../../Animate/Animate";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/logo.png";
+
 import { loginSchema } from "../../Formvalidation/Loginschmea";
 import { useFormik } from "formik";
 const initialValues = {
@@ -43,7 +43,7 @@ export const Login = () => {
       <Animate />
       <div className="form-container">
         <div className="left-container">
-          <img src={logo} alt="" width={"100%"} />
+          <h2>Heliverse</h2>
         </div>
         <div className="right-container">
           <h2
@@ -54,7 +54,7 @@ export const Login = () => {
               letterSpacing: "0.1rem",
             }}
           >
-            Welcome To Digi Sidekick
+            Welcome To Heliverse
           </h2>
           <p
             style={{

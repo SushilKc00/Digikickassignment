@@ -2,7 +2,7 @@ import React from "react";
 import { Layout } from "../../components/Layout/Layout";
 import { Animate } from "../../Animate/Animate";
 import { NavLink, useNavigate } from "react-router-dom";
-import logo from "../../assets/logo.png";
+
 import { useFormik } from "formik";
 import { registerSchema } from "../../Formvalidation/index";
 
@@ -48,7 +48,7 @@ export const Register = () => {
       <Animate />
       <div className="form-container">
         <div className="left-container">
-          <img src={logo} alt="" width={"100%"} />
+          <h2>Heliverse</h2>
         </div>
         <div className="right-container">
           <h2
@@ -59,7 +59,7 @@ export const Register = () => {
               letterSpacing: "0.1rem",
             }}
           >
-            Welcome To Digi Sidekick
+            Welcome To Heliverse
           </h2>
           <p
             style={{

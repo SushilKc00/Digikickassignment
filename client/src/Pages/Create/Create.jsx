@@ -126,23 +126,17 @@ export const Create = () => {
     <Layout>
       {/* Modal section  */}
       <div className={open ? "modal show" : "modal hide"}>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "end",
-            padding: "0.4rem 1rem",
-          }}
-        >
+        <form method="post" onSubmit={handleSubmit}>
           <button
             onClick={() => {
+              window.document.body.classList.remove("bg-blur");
               setOpen(false);
             }}
             style={{ padding: "0.5rem", border: "none", cursor: "pointer" }}
           >
             X
           </button>
-        </div>
-        <form method="post" onSubmit={handleSubmit}>
+
           <h2>Create User</h2>
           <input
             type="text"
@@ -289,6 +283,7 @@ export const Create = () => {
           </button>
           <button
             onClick={() => {
+              window.document.body.classList.add("bg-blur");
               setOpen(true);
             }}
           >

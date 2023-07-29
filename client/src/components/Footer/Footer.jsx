@@ -20,7 +20,7 @@ export const Footer = () => {
       <hr style={{ marginTop: "3rem" }} />
 
       <div className="footer-last">
-        <p>© 2023, Digi kick Private Limited. All Rights Reserved.</p>
+        <p>© 2023, Heliverse Private Limited. All Rights Reserved.</p>
         <div className="social-media">
           <AiFillTwitterSquare
             style={{

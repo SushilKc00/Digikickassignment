@@ -100,21 +100,18 @@ td {
   background-color: rgb(103, 127, 154);
   color: rgb(205, 205, 199);
 }
-.modal {
-  position: fixed;
-  top: 20%;
-  left: 25%;
-  transform: translate(50% -50%);
-  width: 50vw;
-  border-radius: 10px;
-  min-height: 500px;
-  background-color: white;
-}
+
 .modal form {
   display: flex;
+  background-color: rgb(255, 255, 255);
+  width: 40%;
+  margin: auto;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 0px #000000;
+
   padding: 4rem 0;
 }
 .modal form input {
@@ -139,9 +136,19 @@ td {
 .hide {
   display: none;
 }
+.modal.show {
+  position: absolute;
+  top: 0;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
 
-.show {
-  display: block;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(2px);
+  z-index: 1;
 }
 
 .pagination {

@@ -20,8 +20,11 @@ html {
 }
 
 body {
-  background-color: var(--white);
+  /* background-color: var(--white); */
   overflow-x: hidden;
+}
+.bg-blur {
+  overflow: hidden;
 }
 
 ul li {

@@ -9,7 +9,7 @@ export const Home = () => {
   return (
     <Layout>
       <div className="home-container">
-        <h2>WELCOME TO DIGI KICK </h2>
+        <h2>WELCOME TO HELIVERSE </h2>
         <p>Click Start Button to create CURD operation</p>
         <NavLink to="/user/create">
           <button>START</button>
