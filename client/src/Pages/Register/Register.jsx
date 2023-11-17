@@ -20,6 +20,7 @@ export const Register = () => {
       initialValues,
       validationSchema: registerSchema,
       onSubmit: async () => {
+        console.log("helo");
         const res = await fetch("/api/auth/register", {
           method: "POST",
           headers: {
@@ -48,7 +49,7 @@ export const Register = () => {
       <Animate />
       <div className="form-container">
         <div className="left-container">
-          <h2>Heliverse</h2>
+          <h2>yolo</h2>
         </div>
         <div className="right-container">
           <h2
@@ -59,7 +60,7 @@ export const Register = () => {
               letterSpacing: "0.1rem",
             }}
           >
-            Welcome To Heliverse
+            Welcome To Yolo
           </h2>
           <p
             style={{

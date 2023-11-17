@@ -27,6 +27,20 @@
   font-size: 4rem;
   font-family: sans-serif;
   letter-spacing: 0.2rem;
+  font-family: "poppins";
+  letter-spacing: 0.5rem;
+}
+.home-container span {
+  color: rgb(80, 115, 147);
+  background: linear-gradient(
+    to right,
+    rgb(165, 165, 231),
+    rgb(232, 41, 41),
+    rgb(210, 154, 49),
+    rgb(234, 93, 116)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 .home-container button {
   font-size: 1.2rem;

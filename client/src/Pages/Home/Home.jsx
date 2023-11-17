@@ -9,8 +9,10 @@ export const Home = () => {
   return (
     <Layout>
       <div className="home-container">
-        <h2>WELCOME TO HELIVERSE </h2>
-        <p>Click Start Button to create CURD operation</p>
+        <h2>
+          WELCOME TO <span>YOLO ASSIGNMENT</span>{" "}
+        </h2>
+        <p>Click Start Button to perform operation</p>
         <NavLink to="/user/create">
           <button>START</button>
         </NavLink>

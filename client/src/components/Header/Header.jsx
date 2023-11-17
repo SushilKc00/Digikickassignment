@@ -41,8 +41,8 @@ export const Header = () => {
               {toogle ? <AiOutlineClose /> : <RxHamburgerMenu />}
             </div>
             <figure>
-              <NavLink to="/">
-                <h2>HELIVERSE</h2>
+              <NavLink to="/" className="link">
+                <h2>YOLO</h2>
               </NavLink>
             </figure>
           </div>

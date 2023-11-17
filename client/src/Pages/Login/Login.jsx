@@ -31,7 +31,7 @@ export const Login = () => {
         const data = await res.json();
         if (data.success) {
           localStorage.setItem("userid", data.userid);
-          navigate("/");
+          navigate("/user/create");
           alert(data.message);
         } else {
           alert(data.message);
@@ -43,7 +43,7 @@ export const Login = () => {
       <Animate />
       <div className="form-container">
         <div className="left-container">
-          <h2>Heliverse</h2>
+          <h2>yolo</h2>
         </div>
         <div className="right-container">
           <h2
@@ -54,7 +54,7 @@ export const Login = () => {
               letterSpacing: "0.1rem",
             }}
           >
-            Welcome To Heliverse
+            Welcome To Yolo
           </h2>
           <p
             style={{
